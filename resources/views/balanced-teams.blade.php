@@ -41,6 +41,9 @@
                     <div class="text-sm text-gray-500">{{$team['ranking']}}</div>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap">
+                    <div class="text-sm text-gray-500">{{sizeof($team['players'])}}</div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
                     <div class="text-sm text-gray-500">
                         <div class="flex justify-start align-center flex-wrap">
                             @foreach($team['players'] as $user)
@@ -63,7 +66,6 @@
                 </td>
             </tr>
         @endforeach
-
         </tbody>
     </table>
 </div>
