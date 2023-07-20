@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\BalancedTeamController;
+use App\Http\Controllers\TournamentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/',[BalancedTeamController::class,'index']);
+Route::get('/',[TournamentController::class,'index']);
